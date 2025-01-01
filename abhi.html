@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Abhishree</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #121212;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 10%;
+            background: transparent;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #e94560;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        nav a {
+            margin-left: 2rem;
+            font-size: 1.5rem;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e94560;
+        }
+
+        section {
+            padding: 6rem 10%;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 10rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #e94560;
+        }
+
+        .hero p {
+            font-size: 1.8rem;
+            max-width: 800px;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            font-size: 1.6rem;
+            background: transparent;
+            border: 2px solid #e94560;
+            color: #e94560;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .hero .btn:hover {
+            background: #e94560;
+            color: #121212;
+        }
+
+        .skills, .experience, .education, .contact {
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .skills h2, .experience h2, .education h2, .contact h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #e94560;
+        }
+
+        .skills p, .experience p, .education p, .contact p {
+            font-size: 1.6rem;
+            line-height: 1.8;
+        }
+
+        .skills ul, .experience ul, .education ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li, .experience li, .education li {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    border: 3px solid #e94560;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+        .contact form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            padding: 1rem 2rem;
+            background: #e94560;
+            color: #ffffff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact form button:hover {
+            background: #ffffff;
+            color: #e94560;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #1d1d1d;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Abhishree</div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+    <img src="your-photo.jpg" alt="Abhishree's Photo" class="profile-photo">
+    <h1>Hi, I am Abhishree</h1>
+    <p>An aspiring Software Developer with a passion for creating impactful solutions and exploring innovative technologies.</p>
+    <a href="#contact" class="btn">Hire Me</a>
+</section>
+
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, Java, C++</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Machine Learning and AI Basics</li>
+            <li>Cybersecurity Fundamentals</li>
+        </ul>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Intern at Rajput Enterprises: Enhanced data processing efficiency with SQL.</li>
+            <li>Python Project: Worked on predictive algorithms and data visualization.</li>
+            <li>Live Project: Explored Python libraries and machine learning techniques.</li>
+        </ul>
+    </section>
+
+    <section class="education" id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>B.Tech in Computer Science, SRM University (Ongoing)</li>
+            <li>Cybersecurity Course, IIT Bhubaneswar (Completed)</li>
+        </ul>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Abhishree. All rights reserved.</p>
+    </footer>
+</body>
+</html>
